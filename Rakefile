@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bitfinex-rb"
   gem.homepage = "http://github.com/unrealhoang/bitfinex-rb"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Bitfinex Ruby Client}
+  gem.description = %Q{Bitfinex Ruby Client}
   gem.email = "unrealhoang@gmail.com"
-  gem.authors = ["Unreal Hoang"]
+  gem.authors = ["Hoang Luu"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
