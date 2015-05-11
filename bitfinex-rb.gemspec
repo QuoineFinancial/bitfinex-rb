@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".rspec",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -28,8 +29,12 @@ Gem::Specification.new do |s|
     "VERSION",
     "bitfinex-rb.gemspec",
     "lib/bitfinex.rb",
-    "test/helper.rb",
-    "test/test_bitfinex.rb"
+    "lib/bitfinex/net.rb",
+    "lib/bitfinex/support.rb",
+    "spec/bitfinex_spec.rb",
+    "spec/fixtures/vcr_cassettes/bitfinex/order_book.yml",
+    "spec/spec_helper.rb",
+    "spec/support/vcr.rb"
   ]
   s.homepage = "http://github.com/unrealhoang/bitfinex-rb"
   s.licenses = ["MIT"]
@@ -40,24 +45,33 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<shoulda>, [">= 0"])
+      s.add_runtime_dependency(%q<activemodel>, [">= 3.1"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 3.1"])
+      s.add_runtime_dependency(%q<rest-client>, [">= 1.8.0"])
+      s.add_runtime_dependency(%q<ruby-hmac>, ["= 0.4.0"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
-      s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
-      s.add_dependency(%q<shoulda>, [">= 0"])
+      s.add_dependency(%q<activemodel>, [">= 3.1"])
+      s.add_dependency(%q<activesupport>, [">= 3.1"])
+      s.add_dependency(%q<rest-client>, [">= 1.8.0"])
+      s.add_dependency(%q<ruby-hmac>, ["= 0.4.0"])
+      s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
-      s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<shoulda>, [">= 0"])
+    s.add_dependency(%q<activemodel>, [">= 3.1"])
+    s.add_dependency(%q<activesupport>, [">= 3.1"])
+    s.add_dependency(%q<rest-client>, [">= 1.8.0"])
+    s.add_dependency(%q<ruby-hmac>, ["= 0.4.0"])
+    s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
-    s.add_dependency(%q<simplecov>, [">= 0"])
   end
 end
 
