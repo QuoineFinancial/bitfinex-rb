@@ -21,12 +21,15 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bitfinex-rb.gemspec",
     "lib/bitfinex.rb",
-    "test/helper.rb"
+    "test/helper.rb",
+    "test/test_bitfinex.rb"
   ]
   s.homepage = "http://github.com/unrealhoang/bitfinex-rb"
   s.licenses = ["MIT"]

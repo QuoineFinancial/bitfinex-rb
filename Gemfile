@@ -3,12 +3,21 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
+gem "activemodel", ">= 3.1"
+gem "activesupport", ">= 3.1"
+gem "rest_client", "1.7.3"
+gem "ruby-hmac", "0.4.0"
+
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
-  gem "shoulda", ">= 0"
+  gem "rspec", ">= 0"
   gem "rdoc", "~> 3.12"
   gem "bundler", "~> 1.0"
   gem "jeweler", "~> 2.0.1"
-  gem "simplecov", ">= 0"
+end
+
+group :test do
+  gem "vcr", "2.6.0"
+  gem "webmock", "1.13.0"
 end
