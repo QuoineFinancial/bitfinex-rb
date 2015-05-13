@@ -1,15 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (4.2.1)
-      activesupport (= 4.2.1)
-      builder (~> 3.1)
-    activesupport (4.2.1)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
     addressable (2.3.8)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -37,7 +28,6 @@ GEM
       oauth2
     hashie (3.4.1)
     highline (1.7.2)
-    i18n (0.7.0)
     ice_nine (0.11.0)
     jeweler (2.0.1)
       builder
@@ -52,7 +42,6 @@ GEM
     jwt (1.5.0)
     mime-types (2.5)
     mini_portile (0.6.2)
-    minitest (5.6.1)
     multi_json (1.11.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -87,8 +76,6 @@ GEM
     rspec-support (3.2.2)
     safe_yaml (1.0.4)
     thread_safe (0.3.5)
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
     vcr (2.6.0)
     virtus (1.0.2)
       axiom-types (~> 0.1)
@@ -103,8 +90,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activemodel (>= 3.1)
-  activesupport (>= 3.1)
   bundler (~> 1.0)
   jeweler (~> 2.0.1)
   rdoc (~> 3.12)
