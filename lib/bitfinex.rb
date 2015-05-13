@@ -1,19 +1,17 @@
-require 'active_support'
-require 'active_support/core_ext'
-
 require 'bitfinex/net'
 require 'bitfinex/model'
 require 'bitfinex/orders'
 
 module Bitfinex
-  # API Key
-  mattr_accessor :key
+  class << self
+    # API Key
+    attr_accessor :key
+    # Bitfinex secret
+    attr_accessor :secret
+    # Currency
+    attr_accessor :symbol
+  end
 
-  # Bitfinex secret
-  mattr_accessor :secret
-
-  # Currency
-  mattr_accessor :symbol
   @@symbol = :btcusd
 
   def self.order_book(options = {})

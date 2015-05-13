@@ -23,8 +23,6 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.2.5)
-    domain_name (0.5.24)
-      unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.9)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
@@ -39,8 +37,6 @@ GEM
       oauth2
     hashie (3.4.1)
     highline (1.7.2)
-    http-cookie (1.0.2)
-      domain_name (~> 0.5)
     i18n (0.7.0)
     ice_nine (0.11.0)
     jeweler (2.0.1)
@@ -73,8 +69,7 @@ GEM
     rake (10.4.2)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest-client (1.8.0)
-      http-cookie (>= 1.0.2, < 2.0)
+    rest-client (1.7.3)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rspec (3.2.0)
@@ -94,9 +89,6 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.1)
     vcr (2.6.0)
     virtus (1.0.2)
       axiom-types (~> 0.1)
@@ -116,7 +108,7 @@ DEPENDENCIES
   bundler (~> 1.0)
   jeweler (~> 2.0.1)
   rdoc (~> 3.12)
-  rest-client (>= 1.8.0)
+  rest-client (~> 1.7.0)
   rspec
   vcr (= 2.6.0)
   virtus

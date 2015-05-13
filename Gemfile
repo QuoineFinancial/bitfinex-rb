@@ -3,9 +3,7 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-gem "activemodel", ">= 3.1"
-gem "activesupport", ">= 3.1"
-gem "rest-client", ">= 1.8.0"
+gem "rest-client", "~> 1.7.0"
 gem "virtus"
 
 # Add dependencies to develop your gem here.
