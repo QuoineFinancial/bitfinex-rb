@@ -11,7 +11,8 @@ module Bitfinex
     def self.create(order_attr)
       Bitfinex.sanity_check!
 
-      Bitfinex::Order.new(JSON.parse(Bitfinex::Net.post("/v1/order/new", order_attr).to_str))
+      result = Bitfinex::Net.post("/v1/order/new", order_attr.merge(symbol: Bitfinex.symbol)).to_str
+      Bitfinex::Order.new(JSON.parse(result))
     end
   end
 end
