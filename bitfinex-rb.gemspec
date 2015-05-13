@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Hoang Luu"]
-  s.date = "2015-05-11"
+  s.date = "2015-05-13"
   s.description = "Bitfinex Ruby Client"
   s.email = "unrealhoang@gmail.com"
   s.extra_rdoc_files = [
@@ -48,7 +48,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activemodel>, [">= 3.1"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.1"])
       s.add_runtime_dependency(%q<rest-client>, [">= 1.8.0"])
-      s.add_runtime_dependency(%q<ruby-hmac>, ["= 0.4.0"])
+      s.add_runtime_dependency(%q<virtus>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
@@ -57,7 +57,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<activemodel>, [">= 3.1"])
       s.add_dependency(%q<activesupport>, [">= 3.1"])
       s.add_dependency(%q<rest-client>, [">= 1.8.0"])
-      s.add_dependency(%q<ruby-hmac>, ["= 0.4.0"])
+      s.add_dependency(%q<virtus>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
@@ -67,7 +67,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<activemodel>, [">= 3.1"])
     s.add_dependency(%q<activesupport>, [">= 3.1"])
     s.add_dependency(%q<rest-client>, [">= 1.8.0"])
-    s.add_dependency(%q<ruby-hmac>, ["= 0.4.0"])
+    s.add_dependency(%q<virtus>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])

@@ -1,9 +1,9 @@
 require 'active_support'
 require 'active_support/core_ext'
-require 'rest_client'
-require 'hmac-sha2'
 
 require 'bitfinex/net'
+require 'bitfinex/model'
+require 'bitfinex/orders'
 
 module Bitfinex
   # API Key
@@ -16,8 +16,20 @@ module Bitfinex
   mattr_accessor :symbol
   @@symbol = :btcusd
 
-  def self.order_book
-    return JSON.parse Bitfinex::Net.get("/book/#{symbol}").to_str
+  def self.order_book(options = {})
+    return Bitfinex::OrderBook.new(JSON.parse(Bitfinex::Net.get("/v1/book/#{symbol}", options).to_str))
+  end
+
+  def self.ticker(options = {})
+    return Bitfinex::Ticker.new(JSON.parse(Bitfinex::Net.get("/v1/pubticker/#{symbol}", options).to_str))
+  end
+
+  def self.my_trades(options = {})
+    self.sanity_check!
+
+    return JSON.parse(Bitfinex::Net.post("/v1/mytrades", options.merge(symbol: symbol)).to_str).map do |trade_attr| 
+      Bitfinex::Trade.new(trade_attr)
+    end
   end
 
   def self.setup
@@ -25,7 +37,7 @@ module Bitfinex
   end
 
   def self.configured?
-    self.key && self.secret && self.client_id
+    self.key && self.secret
   end
 
   def self.sanity_check!
@@ -33,4 +45,6 @@ module Bitfinex
       raise MissingConfigExeception.new("Bitfinex Gem not properly configured")
     end
   end
+
+  class MissingConfigExeception < RuntimeError; end
 end

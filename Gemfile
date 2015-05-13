@@ -6,7 +6,7 @@ source "http://rubygems.org"
 gem "activemodel", ">= 3.1"
 gem "activesupport", ">= 3.1"
 gem "rest-client", ">= 1.8.0"
-gem "ruby-hmac", "0.4.0"
+gem "virtus"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

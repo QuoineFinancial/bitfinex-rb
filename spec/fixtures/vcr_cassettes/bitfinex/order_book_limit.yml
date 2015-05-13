@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitfinex.com/v1/book/btcusd?group=1&limit_asks=20&limit_bids=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 12 May 2015 04:52:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"7e41bbc228f871e635c9f770728b1b6d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c2abb4a2d7cd082f26e8fe02edf2cf18
+      X-Runtime:
+      - '0.447577'
+      X-Rack-Cache:
+      - miss
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - incap_ses_165_116519=Uj6PK/maTjpXht4DlzNKAhSHUVUAAAAAAa24juJYTx3splGTAvbpyA==;
+        path=/; Domain=.bitfinex.com
+      - nlbi_116519=HneIOoQ8oG1S2A8BSE1f4wAAAABr3PwF5ACkxjxCh+LVkZ/b; path=/; Domain=.bitfinex.com
+      - visid_incap_116519=nFxHg35TSCi9bKgyVh+QbBSHUVUAAAAAQUIPAAAAAADRnO9JCfFqrIVyrZ64+BO/;
+        expires=Wed, 10 May 2017 11:10:49 GMT; path=/; Domain=.bitfinex.com
+      X-Iinfo:
+      - 10-77085999-77086106 NNNY CT(269 270 0) RT(1431406354127 939) q(0 0 6 -1)
+        r(6 13) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIABSHUVUAA5SVwW4bMQxE/2XPhkBKJEXlV4oc0jQHo3BjxO7JyL+HcC9m
+        dgSoV2EfNUORs7ft5/HXZXv6cdvOH8fXt+1pq8JFtsP2cnr/++caB6OQULU4
+        uh5Pb5fry+kcpyyNhdS5F9o+D5lv/bEAxxcQ7joQrI9wLWSD3aXCGlaVUA3J
+        AhQLMFEE10eYCltXHbiCqoMK9ZsDyIqRAZaT9F6YogGhANtvDTngluzHwYxm
+        RHOiZ/qtCaQT7OGnDzGdKagN1KA0AjIVwKj5lLrvM7gShJN81VLFzMn+T/5j
+        jWix2YgSiia4jdGr7GpQGWPFhSjt9y/g1D+tRdhbXIWXOIrsdyiKpEGsNJFA
+        xPseBL30CiK+j4CAl26OAUTmPdERD6qkw9pEgN6H+DmQy2+QhJJtuGApPNA0
+        SXqHkCZ4jdnBMwbueQ1siIyKjYQCFKZJwD2rIUwdwpLlTzKIYYxb2qRWep9F
+        eJP9AgSfMmzMlDMMQJO1DOgowawvwdyR7MTe09ul+SQ+8M+r89L9pBXBa84J
+        Jn9fc04VDbsvsuin5zW3LTLXJy1z1HXP/3sveE11wAd3W5sWRqPmSz3TgX0v
+        pXz8ZtDNS6zav2h5/vwCAAD//wMAIO/CiOwJAAA=
+    http_version: 
+  recorded_at: Tue, 12 May 2015 04:52:36 GMT
+recorded_with: VCR 2.6.0

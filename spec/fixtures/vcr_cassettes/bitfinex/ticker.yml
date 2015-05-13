@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitfinex.com/v1/pubticker/btcusd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 May 2015 05:28:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"6b474703d7b1a60edabb60b1d87398d2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc12689db9d95326562b2813b1bdd2c4
+      X-Runtime:
+      - '0.005438'
+      X-Rack-Cache:
+      - miss
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - incap_ses_218_116519=T9RALBSJZWtyvSYLXX4GA+vgUlUAAAAAmKfX9R4n91RLaqkE/KC0Mg==;
+        path=/; Domain=.bitfinex.com
+      - nlbi_116519=+DhLbCF5m1a2J7dbSE1f4wAAAAAPh0ONFzpV/sU6k2VMSYEk; path=/; Domain=.bitfinex.com
+      - visid_incap_116519=3LCT/MYfRt2j4ZKN5WsjYOvgUlUAAAAAQUIPAAAAAADbMGnkH7K1KC5pOgNlDNRP;
+        expires=Thu, 11 May 2017 11:46:56 GMT; path=/; Domain=.bitfinex.com
+      X-Iinfo:
+      - 10-49864717-49864817 NNNY CT(253 254 0) RT(1431494889776 856) q(0 0 5 -1)
+        r(5 10) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAOvgUlUAA1TMzQqDMBAE4HfZsyz5Wc2mL1PSVjRoUJrYHorv7kYotMdv
+        hpkPpPiACxgyaG0LDdx+LAx5+pKEc8jluj7jvf9Ll/dJhb5yjMN42qLS4tcy
+        b6kOPBuP3BnHqn6XmPpcQlql0mQ1eWJuUZNyzE6u9gMAAP//AwB0xg/fnwAA
+        AA==
+    http_version: 
+  recorded_at: Wed, 13 May 2015 05:28:12 GMT
+recorded_with: VCR 2.6.0
