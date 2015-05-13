@@ -54,6 +54,7 @@ module Bitfinex
   class Order
     include Virtus.model
 
+    attribute :id, Integer
     attribute :order_id, Integer
     attribute :symbol, String
     attribute :exchange, String

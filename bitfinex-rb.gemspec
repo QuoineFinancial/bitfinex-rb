@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".ruby-version",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -29,10 +30,15 @@ Gem::Specification.new do |s|
     "VERSION",
     "bitfinex-rb.gemspec",
     "lib/bitfinex.rb",
+    "lib/bitfinex/model.rb",
     "lib/bitfinex/net.rb",
+    "lib/bitfinex/orders.rb",
     "lib/bitfinex/support.rb",
     "spec/bitfinex_spec.rb",
+    "spec/fixtures/vcr_cassettes/bitfinex/my_trades_configured.yml",
     "spec/fixtures/vcr_cassettes/bitfinex/order_book.yml",
+    "spec/fixtures/vcr_cassettes/bitfinex/order_book_limit.yml",
+    "spec/fixtures/vcr_cassettes/bitfinex/ticker.yml",
     "spec/spec_helper.rb",
     "spec/support/vcr.rb"
   ]

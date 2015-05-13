@@ -11,14 +11,29 @@ module Bitfinex
     end
 
     def self.get(path, options={})
-      RestClient.get(self.to_uri(path), :params => options)
+      begin
+        RestClient.get(self.to_uri(path), :params => options)
+      rescue RestClient::BadRequest => e
+        raise BadRequest.new(e.response)
+      end
     end
 
     def self.post(path, options={})
-      RestClient.post(self.to_uri(path), {}, self.headers_for(path, options))
+      options = stringify_value(options)
+      begin
+        RestClient.post(self.to_uri(path), {}, self.headers_for(path, options))
+      rescue RestClient::BadRequest => e
+        raise BadRequest.new(e.response)
+      end
     end
 
+    class BadRequest < RuntimeError; end
+
     private
+    def self.stringify_value(hash)
+      Hash[hash.map { |k, v| [k, v.to_s] }]
+    end
+    
     def self.headers_for(url, options={})
       payload = {}
       payload['request'] = url
