@@ -16,9 +16,9 @@ http_interactions:
       X-Bfx-Apikey:
       - BMfSp3wAdmWqaZ5cdG5JHecXcsxL8reBYHq4oZrR99b
       X-Bfx-Payload:
-      - eyJyZXF1ZXN0IjoiL3YxL215dHJhZGVzIiwibm9uY2UiOiIxNDMxNDk1MDQ2NzY2MyIsInN5bWJvbCI6ImJ0Y3VzZCJ9
+      - eyJyZXF1ZXN0IjoiL3YxL215dHJhZGVzIiwibm9uY2UiOiIxNDMxNTgxNTA4NzQ2OCIsInN5bWJvbCI6ImJ0Y3VzZCJ9
       X-Bfx-Signature:
-      - b7bbeb98adc8697c49ada7b7419f05a20cb20177c97d010de75c3ca9b35a0070f2a7b5cfa3d44db0e43df6da7867e83f
+      - fa227d0762b45317f13f2666da7312ab52d6d78bed8041d549fa08908237bfcc88b12865467e6f61fa7ad2992c1e8563
       Content-Length:
       - '0'
       User-Agent:
@@ -31,7 +31,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 May 2015 05:30:49 GMT
+      - Thu, 14 May 2015 05:31:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -45,35 +45,39 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"c5f4cb0f0cb5da3b36fa15f0e35d5a4e"'
+      - '"5629e45d3569fc20fdb6c3f2a4a5010e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _bfx_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJWQ2YTg5ZTI5Mjc1MDNmZmNmZmM0MjVlNmI4ODZjZmY2BjsAVA%3D%3D--dcfa5fdc008ef4a47d5c9108e45e7b9245a3b5c0;
-        domain=.bitfinex.com; path=/; expires=Wed, 13-May-2015 06:00:49 GMT; secure;
+      - _bfx_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJWZmMmQzOTY1ZGJkZWU0MTUzZWJiMGFhZjUxZmZiMmRjBjsAVA%3D%3D--ddcb7ce4ee68bc2ed1bc6cc83c3c1e6bed49d673;
+        domain=.bitfinex.com; path=/; expires=Thu, 14-May-2015 06:01:51 GMT; secure;
         HttpOnly
-      - incap_ses_218_116519=o20jXxB58AeI+yYLXX4GA4nhUlUAAAAA8VPme/xVrxNsz82svMJaYg==;
+      - incap_ses_218_116519=PgfvemSD+H+1xTFcX34GA0czVFUAAAAAudNvFe7GxZxCpPQVJDUUqQ==;
         path=/; Domain=.bitfinex.com
-      - nlbi_116519=QDktavHbnB4NW5/9SE1f4wAAAAA17/Nh08yUbUU1sORKTFyn; path=/; Domain=.bitfinex.com
-      - visid_incap_116519=zzzL1JTqSNKJPSkaF1ctlonhUlUAAAAAQUIPAAAAAAD7a8S2R3zvU2XrB54MZDrT;
-        expires=Thu, 11 May 2017 11:48:11 GMT; path=/; Domain=.bitfinex.com
+      - nlbi_116519=rPKvOi/0aE05IzJ/SE1f4wAAAAAh7VCICr1JUk6B1TCuyfwD; path=/; Domain=.bitfinex.com
+      - visid_incap_116519=h3IcIDwqRrar/grCCuuIJ0czVFUAAAAAQUIPAAAAAADzpSVydAQjBqOkh/leZSbo;
+        expires=Fri, 12 May 2017 10:54:51 GMT; path=/; Domain=.bitfinex.com
       X-Request-Id:
-      - c76459af04463d6fb8930c34281a48a5
+      - bc4e35b27c186a3b80b9692cf8a02493
       X-Runtime:
-      - '0.017140'
+      - '0.021567'
       X-Rack-Cache:
       - invalidate, pass
       X-Frame-Options:
       - SAMEORIGIN
       X-Iinfo:
-      - 1-29028899-29028930 NNNY CT(262 551 0) RT(1431495047327 772) q(0 0 9 -1) r(9
+      - 8-2192268-2192291 NNNY CT(270 270 0) RT(1431581509433 816) q(0 0 5 -1) r(5
         11) U6
       X-Cdn:
       - Incapsula
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAInhUlUAA4qOBQAAAP//AwApu0wNAgAAAA==
+        H4sIAEczVFUAA6yOSQrCQBBF79LrGKp6TtbeILgSCaFTaiATbQIGyd3tFhHJ
+        yoW7qlfDf8cHG33jiOWMS5FyzRJWdcPcT4FACjz0U9PRbaq6MSCUAhWiAJtC
+        GNHdXav+Es/j4jLGqqC2Dd2ZqHSz99S7JdBDsX/Dz/9dCIDMCJCvlJrlOgNh
+        ERM2+Jp8GRHXiBKVwTXZuJpfXMN/Bf90td+uSputK7eWw3p6AgAA//8DAPEH
+        kChZAQAA
     http_version: 
-  recorded_at: Wed, 13 May 2015 05:30:49 GMT
+  recorded_at: Thu, 14 May 2015 05:31:51 GMT
 recorded_with: VCR 2.6.0

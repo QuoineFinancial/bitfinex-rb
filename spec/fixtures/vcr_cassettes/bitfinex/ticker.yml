@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 13 May 2015 05:28:11 GMT
+      - Thu, 14 May 2015 05:31:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,35 +35,35 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"6b474703d7b1a60edabb60b1d87398d2"'
+      - '"f836bd60ec61eec7a6003bee8b154771"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bc12689db9d95326562b2813b1bdd2c4
+      - b0e411c11c07dd911e62e59ea060fbd6
       X-Runtime:
-      - '0.005438'
+      - '0.006492'
       X-Rack-Cache:
       - miss
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - incap_ses_218_116519=T9RALBSJZWtyvSYLXX4GA+vgUlUAAAAAmKfX9R4n91RLaqkE/KC0Mg==;
+      - incap_ses_218_116519=BbaOLdBULhpzyjFcX34GA0wzVFUAAAAAGrI+NQ3jxO6JHwFZey3Wsg==;
         path=/; Domain=.bitfinex.com
-      - nlbi_116519=+DhLbCF5m1a2J7dbSE1f4wAAAAAPh0ONFzpV/sU6k2VMSYEk; path=/; Domain=.bitfinex.com
-      - visid_incap_116519=3LCT/MYfRt2j4ZKN5WsjYOvgUlUAAAAAQUIPAAAAAADbMGnkH7K1KC5pOgNlDNRP;
-        expires=Thu, 11 May 2017 11:46:56 GMT; path=/; Domain=.bitfinex.com
+      - nlbi_116519=LR6kCl1QXm9nmsVJSE1f4wAAAADeKxToQP8d45HhqOYyCHUk; path=/; Domain=.bitfinex.com
+      - visid_incap_116519=7smKCo5pRMOw2qumvZYhzUwzVFUAAAAAQUIPAAAAAADtl4bSw/Dz8oaB4b+ILtmR;
+        expires=Fri, 12 May 2017 10:55:04 GMT; path=/; Domain=.bitfinex.com
       X-Iinfo:
-      - 10-49864717-49864817 NNNY CT(253 254 0) RT(1431494889776 856) q(0 0 5 -1)
-        r(5 10) U5
+      - 7-1489594-1489635 NNNY CT(259 260 0) RT(1431581514760 817) q(0 0 5 -1) r(5
+        8) U5
       X-Cdn:
       - Incapsula
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAOvgUlUAA1TMzQqDMBAE4HfZsyz5Wc2mL1PSVjRoUJrYHorv7kYotMdv
-        hpkPpPiACxgyaG0LDdx+LAx5+pKEc8jluj7jvf9Ll/dJhb5yjMN42qLS4tcy
-        b6kOPBuP3BnHqn6XmPpcQlql0mQ1eWJuUZNyzE6u9gMAAP//AwB0xg/fnwAA
+        H4sIAEwzVFUAA0zKQQrCMBBG4bvMWkImnb9pvIxELTaY0GKiLsS7Oy2CLj/e
+        e1FJZ9qT63ojAO3o+DMrY71+ucYcazsst3Qa/588PzeKcU45pcu0WmCs8jHn
+        e9n+AG/NIFbAodfSUhlri2XRyNIxBgbDSID18Lq8PwAAAP//AwDOITADnwAA
         AA==
     http_version: 
-  recorded_at: Wed, 13 May 2015 05:28:12 GMT
+  recorded_at: Thu, 14 May 2015 05:31:56 GMT
 recorded_with: VCR 2.6.0

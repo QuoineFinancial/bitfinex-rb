@@ -12,7 +12,7 @@ module Bitfinex
     attr_accessor :symbol
   end
 
-  @@symbol = :btcusd
+  self.symbol = :btcusd
 
   def self.order_book(options = {})
     return Bitfinex::OrderBook.new(JSON.parse(Bitfinex::Net.get("/v1/book/#{symbol}", options).to_str))

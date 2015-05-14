@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 describe Bitfinex do
+  describe 'symbol' do
+    it 'defaults with btcusd' do
+      expect(Bitfinex.symbol).to eq(:btcusd)
+    end
+  end
   describe 'order_book', vcr: { cassette_name: 'bitfinex/order_book' } do
     let(:order_book) { Bitfinex.order_book }
 
@@ -54,6 +59,12 @@ describe Bitfinex do
     end
 
     context "has not been configurated yet", vcr: { cassette_name: 'bitfinex/my_trades_without_config' }do
+      before do
+        Bitfinex.setup do |config|
+          config.key = nil
+          config.secret = nil
+        end
+      end
       let(:trades) { Bitfinex.my_trades }
 
       it "throws error" do
