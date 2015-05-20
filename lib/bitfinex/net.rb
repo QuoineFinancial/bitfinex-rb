@@ -42,13 +42,12 @@ module Bitfinex
 
       payload_enc = Base64.encode64(payload.to_json).gsub(/\s/, '')
       sig = Digest::HMAC.hexdigest(payload_enc, Bitfinex.secret, Digest::SHA384)
-
       { 
         'Content-Type' => 'application/json',
         'Accept' => 'application/json',
         'X-BFX-APIKEY' => Bitfinex.key,
         'X-BFX-PAYLOAD' => payload_enc,
-        'x-BFX-SIGNATURE' => sig
+        'X-BFX-SIGNATURE' => sig
       }
     end
   end
