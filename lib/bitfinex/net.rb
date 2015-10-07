@@ -23,7 +23,9 @@ module Bitfinex
     def self.post(path, options={})
       options = stringify_value(options)
       begin
+        logger = Logger.new(STDOUT)
         Logger.debug "Post options: #{options}"
+
         RestClient.post(self.to_uri(path), {}, self.headers_for(path, options))
       rescue RestClient::BadRequest => e
         raise BadRequest.new(e.response)
