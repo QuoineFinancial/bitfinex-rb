@@ -3,6 +3,7 @@ require 'base64'
 require 'json'
 require 'digest/hmac'
 require 'digest/sha2'
+require 'logger'
 
 module Bitfinex
   module Net
@@ -22,6 +23,7 @@ module Bitfinex
     def self.post(path, options={})
       options = stringify_value(options)
       begin
+        Logger.debug "Post options: #{options}"
         RestClient.post(self.to_uri(path), {}, self.headers_for(path, options))
       rescue RestClient::BadRequest => e
         raise BadRequest.new(e.response)
