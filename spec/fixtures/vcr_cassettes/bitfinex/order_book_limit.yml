@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 14 May 2015 05:32:04 GMT
+      - Wed, 07 Oct 2015 11:26:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,42 +35,44 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"9536fa2c181985f1a7141d353c98b7bb"'
+      - '"7b2c5827e3257a0ba76a36db75e3ebf4"'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - b8d548f095e2bfc755c5badb4a93e4c6
+      - 546d135ef1e808cb699b15ef18ab1153
       X-Runtime:
-      - '0.343124'
+      - '0.348871'
       X-Rack-Cache:
       - miss
+      Expires:
+      - Wed, 07 Oct 2015 11:26:39 GMT
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - incap_ses_218_116519=ZiO5VE7tpWSL0TFcX34GA1MzVFUAAAAA52H86wTKb3RpHqveA4ZM3g==;
+      - incap_ses_218_116519=+uEQLtEOAzd2bwxYkH4GA3ABFVYAAAAAe4MISfcLxXOtVeTNkEnaIw==;
         path=/; Domain=.bitfinex.com
-      - nlbi_116519=K298O/T7QXsHFHbmSE1f4wAAAAD6PHl6fYASrehSfIjscHpj; path=/; Domain=.bitfinex.com
-      - visid_incap_116519=tFjsQoMHSMWzJjYhAtx2J1MzVFUAAAAAQUIPAAAAAABAHrgnl1/1gZ22BY+PaKec;
-        expires=Fri, 12 May 2017 10:55:04 GMT; path=/; Domain=.bitfinex.com
+      - nlbi_116519=yt0QIHSsuARAMDhe0Ad1SgAAAABoffBAK7bdL2nNULqQ4nRe; path=/; Domain=.bitfinex.com
+      - visid_incap_116519=IquIrsC7R0CIPvJ7MWF+C3ABFVYAAAAAQUIPAAAAAAALAarY/9vRPQ/T9MQv/0b4;
+        expires=Thu, 05 Oct 2017 12:00:11 GMT; path=/; Domain=.bitfinex.com
       X-Iinfo:
-      - 9-3772797-3772890 NNNY CT(264 265 0) RT(1431581521921 789) q(0 0 5 -1) r(5
-        11) U5
+      - 10-285021925-284995414 PNNY RT(1444217199107 465) q(0 0 0 -1) r(6 6) U5
       X-Cdn:
       - Incapsula
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAFQzVFUAA5SVQW4bMQxF76J1IJCUSEq5SpFF2mZhFG6D2l0FuXs1Xpnj
-        r1azMjDwI8XPT/IjfT19v6TnLx/p/ffp21t6TlIsl5Ke0uv515+f1/FFM1ut
-        48v1dH67XF/P7+Mj18LaWIUzpc+nHS/3fM2NxKl4n8TgjmLwfQzKwtxqu70M
-        xjAQQ0IdkrWpHKlDdnVUMp7xAnhu9zxTLv1QfvaYXwiW731EQLje4238A8Fb
-        cxActDMMN64dCU+hcM9Seym3apb7T76Q37s4hDWah2DbvBssnepaaiC65t4X
-        390Q3OLgOeGOD93bo+6DD6Ix54ldxyAhOqjGM8N0dkV0jZqbwdzU+uOoDFoi
-        rfjhxWDqJclZaWNfxn8vPx6X3m5Y3GuTSQmqyDa2s02jOuG7o6ExXSmjGYYt
-        9M6zysQ5QpAPzime67D3oQeEJrBmsbHxJyHUHt1v2ZcjmI4fFCG4SDQXu92G
-        yeaphNamx6uxNZLh6dqkQEbwYASWLK4wgNXeCAUIWpZ/WAHJGI/OBDYTQpuz
-        rey+bQ4rgndrF28fUpzZ0/+v1cgM3ddC0TIubz+wOAcfFK9yTPFofZorjuzW
-        1w6tKFI8ruwyyVyo36bl5fMvAAAA//8DAATArA7xCQAA
+        H4sIAHABFVYAA5SWy27cMAxF/8XrQBApvpRfKbJI2ywGxbRBJ10F+fcwLRAM
+        7StgurThw8eleOXX7evp+2W7//K6Pf8+fXva7jcWbRTb3fZ4/vXn50u+6a1T
+        Pr+czk+Xl8fzc74iEWEyJm19e7vb0XZNa+OuEaIGY4zZB4qhuwoY0zEF0XIj
+        7QHoXrq3FtwH5J0c1d69ZhdMZ/aO6KIerYt3c4QX4fQjAx5dn4i+UThXSI86
+        +EVqYaga3ZqaEH0N8yJzssfM0qbvyqY812aL/EIGYoTdVD3rPM486f1px/vG
+        Gsfek+YbczsjuuiezQ2OuQhgx2XLANf8iKbTFfLqYFmleWl+UHOXMY0WfkFx
+        PPYZZK8B2bTBWEed9leJh0QuP4D9zWoAU2YsDCDQHpRaJL9Y4kBQ/ecXn3xk
+        +gU9kQFIWWHOT8bA80j7Oh6IDFDmkbuqbKsKYPtSHYxbRBc8CaeBvKBUQNIk
+        hg/FIXqHdqJaRUy7XZVgiC898MJGu/M4ukHCVpMrkUN+xkRuVgxprJMLqtwL
+        PfM6xoaQPKPrL3a8GWE/cIK3QERt3ohx82qEmp9l+8RzlHByyYM7zOpV8CGe
+        T5OOTzBPO/qx7S7R3BL5DwVs9wPR2yK59XFcYGtU5R+yal/t+Pdl1Xzy6EHt
+        Pyt/eHsHAAD//wMAdmN8kQMKAAA=
     http_version: 
-  recorded_at: Thu, 14 May 2015 05:32:04 GMT
+  recorded_at: Wed, 07 Oct 2015 11:26:41 GMT
 recorded_with: VCR 2.6.0

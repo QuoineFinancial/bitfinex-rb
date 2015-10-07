@@ -16,9 +16,9 @@ http_interactions:
       X-Bfx-Apikey:
       - BMfSp3wAdmWqaZ5cdG5JHecXcsxL8reBYHq4oZrR99b
       X-Bfx-Payload:
-      - eyJyZXF1ZXN0IjoiL3YxL215dHJhZGVzIiwibm9uY2UiOiIxNDMxNTgxNTA4NzQ2OCIsInN5bWJvbCI6ImJ0Y3VzZCJ9
+      - eyJyZXF1ZXN0IjoiL3YxL215dHJhZGVzIiwibm9uY2UiOiIxNDQ0MjE3MjAxNzk1NiIsInN5bWJvbCI6ImJ0Y3VzZCJ9
       X-Bfx-Signature:
-      - fa227d0762b45317f13f2666da7312ab52d6d78bed8041d549fa08908237bfcc88b12865467e6f61fa7ad2992c1e8563
+      - 2b7f083a6e7d981042796cd2d9b0999b8dcf40f5f6f2b6eee0e1bad39a5b823a6cfa54f1fcbeaf56808911a926f69d2d
       Content-Length:
       - '0'
       User-Agent:
@@ -31,7 +31,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 14 May 2015 05:31:51 GMT
+      - Wed, 07 Oct 2015 11:26:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -45,39 +45,63 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"5629e45d3569fc20fdb6c3f2a4a5010e"'
+      - '"663a0e8ac857e781929f3d41ae6d73b1"'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       Set-Cookie:
-      - _bfx_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJWZmMmQzOTY1ZGJkZWU0MTUzZWJiMGFhZjUxZmZiMmRjBjsAVA%3D%3D--ddcb7ce4ee68bc2ed1bc6cc83c3c1e6bed49d673;
-        domain=.bitfinex.com; path=/; expires=Thu, 14-May-2015 06:01:51 GMT; secure;
+      - _bfx_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJTk4NWU5ZDUyM2FmNGM1YWM3MGViMGVkMzhiYWQzOGIyBjsAVA%3D%3D--cfde337bf9ecfa975cab0698ae6fde0b6737048d;
+        domain=.bitfinex.com; path=/; expires=Wed, 07-Oct-2015 11:56:42 GMT; secure;
         HttpOnly
-      - incap_ses_218_116519=PgfvemSD+H+1xTFcX34GA0czVFUAAAAAudNvFe7GxZxCpPQVJDUUqQ==;
+      - incap_ses_218_116519=NikJEb+injuAcwxYkH4GA3IBFVYAAAAAZW9gHGvs7x7cYt8bfpxnfg==;
         path=/; Domain=.bitfinex.com
-      - nlbi_116519=rPKvOi/0aE05IzJ/SE1f4wAAAAAh7VCICr1JUk6B1TCuyfwD; path=/; Domain=.bitfinex.com
-      - visid_incap_116519=h3IcIDwqRrar/grCCuuIJ0czVFUAAAAAQUIPAAAAAADzpSVydAQjBqOkh/leZSbo;
-        expires=Fri, 12 May 2017 10:54:51 GMT; path=/; Domain=.bitfinex.com
+      - nlbi_116519=y+2FFqTQyHYi2viw0Ad1SgAAAACU8xHqDvW4Y29C9/TA3m40; path=/; Domain=.bitfinex.com
+      - visid_incap_116519=Tv0Ofhp/QcmmmQlMImcvkXIBFVYAAAAAQUIPAAAAAAAvXJyAtD/vDTBLoe+agdBK;
+        expires=Thu, 05 Oct 2017 12:00:11 GMT; path=/; Domain=.bitfinex.com
       X-Request-Id:
-      - bc4e35b27c186a3b80b9692cf8a02493
+      - 0f1ddd8e6fd70c26f2c1c55aab9cf744
       X-Runtime:
-      - '0.021567'
+      - '0.042281'
       X-Rack-Cache:
       - invalidate, pass
+      Expires:
+      - Wed, 07 Oct 2015 11:26:41 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Iinfo:
-      - 8-2192268-2192291 NNNY CT(270 270 0) RT(1431581509433 816) q(0 0 5 -1) r(5
-        11) U6
+      - 8-202801543-202772213 PNNY RT(1444217200625 510) q(0 0 0 -1) r(11 11) U6
       X-Cdn:
       - Incapsula
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAEczVFUAA6yOSQrCQBBF79LrGKp6TtbeILgSCaFTaiATbQIGyd3tFhHJ
-        yoW7qlfDf8cHG33jiOWMS5FyzRJWdcPcT4FACjz0U9PRbaq6MSCUAhWiAJtC
-        GNHdXav+Es/j4jLGqqC2Dd2ZqHSz99S7JdBDsX/Dz/9dCIDMCJCvlJrlOgNh
-        ERM2+Jp8GRHXiBKVwTXZuJpfXMN/Bf90td+uSputK7eWw3p6AgAA//8DAPEH
-        kChZAQAA
+        H4sIAHIBFVYAA7SZ0W4cNwxF/2Wf3YEoUpSUx7Z/kPapKALD2bYBYsdwbaBG
+        0X/vVRq0FinN7jbyWzzezB5zri4vOT/9ebh/+HBzPLw5REmbyOHqcH376enu
+        EVfClvDj44fb4++P17f3uEIiEkmryBbwq+MfN79d3/3a/nf74PN9+9e3T8/4
+        4Zfj8d3N08PD8e7muV384bsvF/+9+zdhC4E+f8H7wxuiWiQKXx0+Pbw/Prxr
+        10RyzpI4/XVlMNN5mKyvhEkeU6RazI4ybjWpTEl5EWmqFGtPy3VAGxyt6Etc
+        2mLMdUIb6yJafG8qhjZ7Ws5sadkUN9Jrs+J2hjSdR2rOVCjCHJKOeRPTnPft
+        8eNHD/zj2+9HwEKcKxtmcsyoUHHM0ZyvrIybxSFyAvQa5FiislKPHKKTb0IB
+        nScY5IhalhjKDHlRlSmUTLFUg+w0DGSiXWSC+SrpHDntCPkS5Bwq1VyKQXbC
+        SBJrPlFlohJy5rGWE266SMsp15BIDLJrFikW2teybHlswYDdseDzYePGsVpQ
+        1y4AGk4dOlJ8MqrMcOOi2pagKbORA/lDh3bgeoZRsBIXwd82RJaSd1LDRQqu
+        1LTJPXLwh47QqU8gl0I1zqoM5CWiCBu+o1QpapD9oSO03d0c0U7DEBYpZVXr
+        aG35JSkn52haS4z7iSdsHBg613HfCCEscjSSSpr7IAFkW9yGHE4VV5li+/tn
+        yItOHYdaYxBDbA0NxLDXE7FSW5iLcajgUBcpGHEQ1ZPaZ0tOzie0ahBnbR2y
+        Ik/UsQ033iUV5i1y87VodExex4o2derESUE3LMM215CXnTsuLMmowkU2ran6
+        znyWSTTY8GomQV6/IHUObEglJm0T0IRXF5kEglXN6BwG2bbmhqze16gXcCWa
+        iWENL29cMUtADz1v8OdtyNs3OcQizFUz4LymwBorwvCXr/kP2B+4VE+2OETh
+        NDM03RnqLxIEGj+evzltriU3Xh8qWXtg5PuIuW7MnKUsihFRVTGJ9ibMXsT4
+        VHKm9vnRvGwcQ1jluGq5k7pJjqPXQmrD8D7nP9464ERoW7WFMJjOxhIav7Ox
+        szF3GtpXYbqnLrWW/4+508S+ApOqcyxgil/pnUeZXovSHXupgxGNa4+JWTrA
+        k4YBF7SyavfEgkG7dyoqA+Tsn78pLEy6YpgejmiNuKyqb8JgpYZ4oNjs16Yd
+        cWuEYVrfVftdza68eaDb7BuXKa+iQc1gV9kVR1fZ7JwVsHSqshjz4zgmgnbV
+        QlpLMCGc8ki5g4W0abHIrlPaVR4LwGxpXTsQJC5vYGZ9szdIgjguezWBBmOk
+        qwM1iPrOUM5OieBd1mwTeLMBHghCBq992KRE1jCdHIC8SsKItQgFBnmgChnk
+        xK7GGBwCzcxsFS4xTpxVxMB5R7R2iNx5VQFiWlZgUsT6HjkN/Df6ZchFQRzI
+        q/IDhaLJyDgNzh0e6wlf210utPcBq4ocmska4sHBI/86qM+Q0+UCYHdmyQsV
+        YUAHxw22sW/Ce4smsO4sQi47b9Cq6RlpcN4Ga7FOCSc2eYobL5vLSqF+W0oy
+        0O5g6KHOgtMsp9MqazAy8Ou7tjN3yYFNo5ilHNpb516mVyMAP+pKTgP36kBp
+        E4KxZB6+dw/IlsveuxdkE1Nbv/kAMga1n/8WAAAA//8DALQbRLMkIgAA
     http_version: 
-  recorded_at: Thu, 14 May 2015 05:31:51 GMT
+  recorded_at: Wed, 07 Oct 2015 11:26:43 GMT
 recorded_with: VCR 2.6.0
