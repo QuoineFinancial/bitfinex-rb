@@ -30,6 +30,12 @@ module Bitfinex
     end
   end
 
+  def self.balances(options = {})
+    self.sanity_check!
+
+    return JSON.parse(Bitfinex::Net.post("/v1/balances", options))
+  end
+
   def self.setup
     yield self
   end

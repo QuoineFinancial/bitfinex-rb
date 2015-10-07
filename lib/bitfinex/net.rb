@@ -6,6 +6,7 @@ require 'digest/sha2'
 
 module Bitfinex
   module Net
+    INT_KEYS = [:reverse, :limit_trades, :order_id, :position_id, :limit, :offer_id, :swap_id]
     def self.to_uri(path)
       return "https://api.bitfinex.com#{path}"
     end
@@ -31,9 +32,9 @@ module Bitfinex
 
     private
     def self.stringify_value(hash)
-      Hash[hash.map { |k, v| [k, v.to_s] }]
+      Hash[hash.map { |k, v| INT_KEYS.include?(k.to_sym) ? [k, v.to_s] : [k, v] }]
     end
-    
+
     def self.headers_for(url, options={})
       payload = {}
       payload['request'] = url
@@ -42,7 +43,7 @@ module Bitfinex
 
       payload_enc = Base64.encode64(payload.to_json).gsub(/\s/, '')
       sig = Digest::HMAC.hexdigest(payload_enc, Bitfinex.secret, Digest::SHA384)
-      { 
+      {
         'Content-Type' => 'application/json',
         'Accept' => 'application/json',
         'X-BFX-APIKEY' => Bitfinex.key,
