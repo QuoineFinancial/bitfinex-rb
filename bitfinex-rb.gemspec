@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Hoang Luu"]
-  s.date = "2015-10-07"
+  s.date = "2016-09-08"
   s.description = "Bitfinex Ruby Client"
   s.email = "unrealhoang@gmail.com"
   s.extra_rdoc_files = [
@@ -36,7 +36,6 @@ Gem::Specification.new do |s|
     "lib/bitfinex/support.rb",
     "spec/bitfinex_spec.rb",
     "spec/fixtures/vcr_cassettes/bitfinex/my_trades_configured.yml",
-    "spec/fixtures/vcr_cassettes/bitfinex/my_trades_without_config.yml",
     "spec/fixtures/vcr_cassettes/bitfinex/order_book.yml",
     "spec/fixtures/vcr_cassettes/bitfinex/order_book_limit.yml",
     "spec/fixtures/vcr_cassettes/bitfinex/ticker.yml",
