@@ -25,7 +25,8 @@ module Bitfinex
   def self.my_trades(options = {})
     self.sanity_check!
 
-    return JSON.parse(Bitfinex::Net.post("/v1/mytrades", options.merge(symbol: symbol)).to_str).map do |trade_attr| 
+    default = { symbol: symbol }
+    return JSON.parse(Bitfinex::Net.post("/v1/mytrades", default.merge(options)).to_str).map do |trade_attr|
       Bitfinex::Trade.new(trade_attr)
     end
   end
