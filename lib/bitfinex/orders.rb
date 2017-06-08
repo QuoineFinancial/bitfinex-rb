@@ -14,5 +14,10 @@ module Bitfinex
       result = Bitfinex::Net.post("/v1/order/new", default.merge(order_attr)).to_str
       Bitfinex::Order.new(JSON.parse(result))
     end
+
+    def self.cancel(options = {})
+      Bitfinex.sanity_check!
+      Bitfinex::Net.post("/v1/order/cancel", options)
+    end
   end
 end
