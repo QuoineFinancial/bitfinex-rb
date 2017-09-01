@@ -14,5 +14,11 @@ module Bitfinex
       result = Bitfinex::Net.post("/v1/order/new", default.merge(order_attr)).to_str
       Bitfinex::Order.new(JSON.parse(result))
     end
+
+    def self.get(options)
+      Bitfinex.sanity_check!
+      result = Bitfinex::Net.post("/v1/order/status", options).to_str
+      Bitfinex::Order.new(JSON.parse(result))
+    end
   end
 end
