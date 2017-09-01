@@ -1,7 +1,7 @@
 require 'rest_client'
 require 'base64'
 require 'json'
-require 'digest/hmac'
+require 'openssl'
 require 'digest/sha2'
 require 'logger'
 
@@ -39,11 +39,12 @@ module Bitfinex
     def self.headers_for(url, options={})
       payload = {}
       payload['request'] = url
-      payload['nonce'] = (Time.now.to_f * 10000).to_i.to_s
+      payload['nonce'] = (Time.now.to_f * 1_000_000_000).to_i.to_s
       payload.merge!(options)
 
       payload_enc = Base64.encode64(payload.to_json).gsub(/\s/, '')
-      sig = Digest::HMAC.hexdigest(payload_enc, Bitfinex.secret, Digest::SHA384)
+      digest = OpenSSL::Digest.new('sha384')
+      sig = OpenSSL::HMAC.hexdigest(digest, Bitfinex.secret, payload_enc)
       {
         'Content-Type' => 'application/json',
         'Accept' => 'application/json',
