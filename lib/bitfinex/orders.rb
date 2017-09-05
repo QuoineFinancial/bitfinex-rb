@@ -19,10 +19,15 @@ module Bitfinex
       result = Bitfinex::Net.post("/v1/order/status", options).to_str
       Bitfinex::Order.new(JSON.parse(result))
     end
-    
+
     def self.cancel(options = {})
       Bitfinex.sanity_check!
       Bitfinex::Net.post("/v1/order/cancel", options)
+    end
+
+    def self.cancel_all
+      Bitfinex.sanity_check!
+      Bitfinex::Net.post("/v1/order/cancel/all")
     end
   end
 end
